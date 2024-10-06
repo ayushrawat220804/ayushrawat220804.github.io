@@ -378,5 +378,18 @@
       <p>Copyright &#169; 2024 Ayush Rawat. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.14/dist/nightowl.js">
+  </script>
+  <script type="module">
+    import { createNightowl } from '@bufferhead/nightowl'
+
+    createNightowl({
+        defaultMode: 'light' | 'dark',
+        default: 'light'
+        toggleButtonMode: 'currentState' | 'newState'
+    })
+  </script>
   </body>
 </html>
